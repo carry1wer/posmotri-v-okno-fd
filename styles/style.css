@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -30,6 +33,7 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 ul,
@@ -50,12 +54,6 @@ ol {
   background-color: #D9D9D9;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: flex;
   align-items: flex-end;
@@ -73,7 +71,7 @@ ol {
   position: relative;
   overflow-y: auto;
   height: 300px;
-  padding-right: 3px;
+  padding: 2px;
 }
 
 .content__list-item {
@@ -218,10 +216,6 @@ ol {
   cursor: pointer;
 }
 
-.search-form__fieldset {
-  border: 0;
-}
-
 .search-form__label {
   display: flex;
   align-items: center;
@@ -247,8 +241,8 @@ ol {
   border: 0;
   background-color: transparent;
   min-width: 225px;
-  border-top: 1px solid rgba(255, 255, 255, 1);
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   color: #fff;
   appearance: none;
 }
@@ -293,7 +287,7 @@ ol {
   font-size: 18px;
   line-height: 100%;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
 }
 
 .search-form__submit-button {
